@@ -1,0 +1,11 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = TaoYe
+	email = endtoni@gmail.com
+[alias]
+	log3 = log --oneline --decorate --graph
+	last = log -1 HEAD
